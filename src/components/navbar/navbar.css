@@ -48,6 +48,13 @@
   cursor: pointer;
 }
 
+.gpt3__navbar-links_container p:hover, .gpt3__navbar-sign p:hover,
+.gpt3__navbar-menu_container-links-sign p:hover,
+.gpt3__navbar-menu_container-links p:hover {
+  border-bottom: 1px solid #FF4820;
+  
+}
+
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container-links-sign button {
   background: #FF4820;
@@ -125,7 +132,7 @@
  }
 
   /* Smaller screen */
- @media screen and (max-width: 700px) {
+ @media screen and (max-width: 490px) {
   
   .gpt3__navbar {
     padding: 2em;
@@ -135,11 +142,14 @@
     display: none;
   }
 
-  .gpt3__navbar-menu_container {
-    top: 20px;
-  }
+  
 
   .gpt3__navbar-menu_container-links-sign {
     display: block;
+    margin-top: 1.5em;
+  }
+
+  .gpt3__navbar-menu_container-links-sign button {
+    margin-top: 0.75em;
   }
  }
