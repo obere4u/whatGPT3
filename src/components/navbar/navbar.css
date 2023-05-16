@@ -43,16 +43,19 @@
   font-size: 1.125rem;
   line-height: 25px;
   text-transform: capitalize;
-
-  margin: 0 1em;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
   cursor: pointer;
 }
 
 .gpt3__navbar-links_container p:hover, .gpt3__navbar-sign p:hover,
 .gpt3__navbar-menu_container-links-sign p:hover,
 .gpt3__navbar-menu_container-links p:hover {
-  border-bottom: 1px solid #FF4820;
-  
+  background: #FF4820;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .gpt3__navbar-sign button,
@@ -60,6 +63,7 @@
   background: #FF4820;
   padding: 0.5em 1em;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   outline: none;
   
@@ -71,7 +75,7 @@
 }
 
 .gpt3__navbar-menu {
-  margin: 0 1em;
+  margin-left: 1em;
 
   display: none;
   position: relative;
@@ -121,6 +125,12 @@
   .gpt3__navbar-sign {
     justify-content: center;
   }
+ .gpt3__navbar-links_container p, .gpt3__navbar-sign p,
+  .gpt3__navbar-menu_container-links-sign p,
+  .gpt3__navbar-menu_container-links p {
+    font-size: 1rem;
+  }
+
  }
 
  /* Small screen */
@@ -129,20 +139,30 @@
   .gpt3__navbar {
     padding: 2em 4em;
   }
+   .gpt3__navbar-links_container p, .gpt3__navbar-sign p,
+  .gpt3__navbar-menu_container-links-sign p,
+  .gpt3__navbar-menu_container-links p {
+    font-size: 1rem;
+  }
+
  }
 
   /* Smaller screen */
  @media screen and (max-width: 490px) {
   
   .gpt3__navbar {
-    padding: 2em;
+    padding: 1em;
   }
 
   .gpt3__navbar-sign {
     display: none;
   }
 
-  
+  .gpt3__navbar-links_container p, .gpt3__navbar-sign p,
+.gpt3__navbar-menu_container-links-sign p,
+.gpt3__navbar-menu_container-links p {
+  font-size: 1rem;
+}
 
   .gpt3__navbar-menu_container-links-sign {
     display: block;
