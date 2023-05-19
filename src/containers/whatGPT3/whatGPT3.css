@@ -64,7 +64,8 @@
 }
 
 .gpt3__whatgpt3-heading p:hover {
-    color: var(--color-text);
+    opacity: 0.8;
+    transition:  500ms ease-in-out;
 }
 
 .gpt3__whatgpt3-container {
