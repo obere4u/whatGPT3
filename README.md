@@ -1,6 +1,7 @@
 # whatGPT3 Landing page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This project will teach you more about how to keep a neat folder structure
 
 ## Available Scripts
 
